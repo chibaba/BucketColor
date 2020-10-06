@@ -70,6 +70,39 @@ CardView  red, purple, maroon, royalBlue, accent, yellow, green, white, black, b
                 intent.putExtra(ColorDetails.colorDetails, "Blue is one of the three primary colours of...");
                 intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.blue));
                 intent.putExtra(ColorDetails.urlBrowser, "https://en.wikipedia.org/wiki/blue");
+                startActivity(intent);
+            }
+        });
+        purple.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "Purple refers to any of a variety of colors with hue between red and blue...");
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.purple));
+                intent.putExtra(ColorDetails.urlBrowser, "https://en.wikipedia.org/wiki/purple");
+                startActivity(intent);
+
+            }
+        });
+        accent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "Accent does not exist. You can ask for it to be created, but consider checking ..");
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.Accent));
+                intent.putExtra(ColorDetails.urlBrowser, "https://en.wikipedia.org/wiki/accent");
+                startActivity(intent);
+            }
+        });
+
+        white.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "White is the lightest color and is achromatic (having no hue). It is the color of fresh snow.." );
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.white));
+                intent.putExtra((ColorDetails.urlBrowser, "http://en.wikipedia.org/wiki/white"));
+                startActivity(intent);
             }
         });
     }
