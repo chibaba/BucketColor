@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">ColorBucket</string>
+    <string name="colorName">red</string>
+    <string name="red">Red is the color at the end of the visible spectrum of light, next to orange and opposite...</string>
+    <string name="purple">"Purple refers to any of a variety of colors with hue between red and blue..."</string>
+    <string name="maroon">"Maroon is a dark brownish red or dark reddish purple color that ..."</string>
+    <string name="royalBlue">is both a bright shade and a dark shade of azure blue. It is said to have been created...</string>
+    <string name="accent">The page "Accent color" does not exist. You can ask for it to be created, but consider checking ...</string>
+    <string name="yellow">Yellow is the color between orange and green on the spectrum of visible light. It is...</string>
+    <string name="green">Green is the color between blue and yellow on the visible spectrum...</string>
+    <string name="white">White is the lightest color and is achromatic (having no hue). It is the color of fresh snow...</string>
+    <string name="black">Black is the darkest color, the result of the absence or complete absorption of visible light...</string>
+    <string name="blue">Blue is one of the three primary colours of pigments in painting and traditional colour theory...</string>
+    <string name="orange">Orange is the colour between yellow and red on the spectrum of visible light...</string>
+    <string name="violet">Violet is the color of light at the short wavelength end of the visible spectrum, between blue...</string>
+    <string name="pink">Pink is a pale tint of red that is named after a flower of the same name. It was fir...</string>
+    <string name="cyan">Cyan is a greenish-blue color. It is evoked by light with a predominant ...</string>
+    <string name="azure">Azure may refer to: Azure (color), a hue of blue Azure (heraldry) Shades of azure, sh...</string>
+    <string name="primarycolor">iverse sets of color, e.g. electronic displays, color printing, and paintin...</string>
+    <string name="brown">Brown is a composite color. In the CMYK color model used in printing or painting, brown is made...</string>
 </resources>
