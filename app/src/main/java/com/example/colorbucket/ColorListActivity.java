@@ -70,6 +70,18 @@ CardView  red, purple, maroon, royalBlue, accent, yellow, green, white, black, b
                 intent.putExtra(ColorDetails.colorDetails, "Blue is one of the three primary colours of...");
                 intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.blue));
                 intent.putExtra(ColorDetails.urlBrowser, "https://en.wikipedia.org/wiki/blue");
+                startActivity(intent);
+            }
+        });
+        purple.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "Purple refers to any of a variety of colors with hue between red and blue...");
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.purple));
+                intent.putExtra(ColorDetails.urlBrowser, "https://en.wikipedia.org/wiki/purple");
+                startActivity(intent);
+
             }
         });
     }
