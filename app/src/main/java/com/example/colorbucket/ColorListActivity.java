@@ -24,5 +24,19 @@ CardView  red, purple, maroon, royalBlue, accent, yellow, green, white, black, b
         maroon = findViewById(R.id.Maroon);
         royalBlue = findViewById(R.id.RoyalBlue);
         accent = findViewById(R.id.Accent);
+        yellow = findViewById(R.id.Yellow);
+        green = findViewById(R.id.Green);
+        white = findViewById(R.id.White);
+        black = findViewById(R.id.Black);
+        blue  = findViewById(R.id.Blue);
+        orange =  findViewById(R.id.Orange);
+        violet =  findViewById(R.id.Violet);
+        pink =  findViewById(R.id.Pink);
+        cyan =   findViewById(R.id.Cyan);
+        azure =   findViewById(R.id.Azure);
+        primaryColor =  findViewById(R.id.Primary);
+        brown =  findViewById(R.id.Brown);
+
+
     }
 }
