@@ -94,5 +94,16 @@ CardView  red, purple, maroon, royalBlue, accent, yellow, green, white, black, b
                 startActivity(intent);
             }
         });
+
+        white.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "White is the lightest color and is achromatic (having no hue). It is the color of fresh snow.." );
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.white));
+                intent.putExtra((ColorDetails.urlBrowser, "http://en.wikipedia.org/wiki/white"));
+                startActivity(intent);
+            }
+        });
     }
 }
