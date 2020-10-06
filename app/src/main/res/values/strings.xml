@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ColorBucket</string>
+    <string name="colorName">red</string>
 </resources>
