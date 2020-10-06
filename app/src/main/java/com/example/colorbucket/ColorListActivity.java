@@ -3,7 +3,9 @@ package com.example.colorbucket;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class ColorListActivity extends AppCompatActivity {
 
@@ -39,6 +41,36 @@ CardView  red, purple, maroon, royalBlue, accent, yellow, green, white, black, b
     }
 
     public void changeOnClick() {
-        
+        green.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "Green is the color between blue and yellow on the visible spectrum ...");
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.green));
+                intent.putExtra(ColorDetails.urlBrowser, "https://en.wikipedia.org/wiki/Green");
+                startActivity(intent);
+            }
+        });
+
+        red.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "Red is the color at the end of the visible spectrum of light, ne...");
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.red));
+                intent.putExtra(ColorDetails.urlBrowser, "https://en.wikipedia.org/wiki/Red");
+                startActivity(intent);
+
+            }
+        });
+        blue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "Blue is one of the three primary colours of...");
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.blue));
+                intent.putExtra(ColorDetails.urlBrowser, "https://en.wikipedia.org/wiki/blue");
+            }
+        });
     }
 }
