@@ -15,7 +15,7 @@ CardView  red, purple, maroon, royalBlue, accent, yellow, green, white, black, b
         setContentView(R.layout.colorlist_main);
 
         renderView();
-        changeOnClick()
+        changeOnClick();
     }
 
     public void renderView() {
@@ -36,7 +36,9 @@ CardView  red, purple, maroon, royalBlue, accent, yellow, green, white, black, b
         azure =   findViewById(R.id.Azure);
         primaryColor =  findViewById(R.id.Primary);
         brown =  findViewById(R.id.Brown);
+    }
 
-
+    public void changeOnClick() {
+        
     }
 }
