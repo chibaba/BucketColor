@@ -84,5 +84,15 @@ CardView  red, purple, maroon, royalBlue, accent, yellow, green, white, black, b
 
             }
         });
+        accent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "Accent does not exist. You can ask for it to be created, but consider checking ..");
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.Accent));
+                intent.putExtra(ColorDetails.urlBrowser, "https://en.wikipedia.org/wiki/accent");
+                startActivity(intent);
+            }
+        });
     }
 }
