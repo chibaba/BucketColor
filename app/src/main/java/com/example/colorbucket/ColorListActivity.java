@@ -101,9 +101,80 @@ CardView  red, purple, maroon, royalBlue, accent, yellow, green, white, black, b
                 Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
                 intent.putExtra(ColorDetails.colorDetails, "White is the lightest color and is achromatic (having no hue). It is the color of fresh snow.." );
                 intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.white));
-                intent.putExtra((ColorDetails.urlBrowser, "http://en.wikipedia.org/wiki/white"));
+                intent.putExtra(ColorDetails.urlBrowser, "http://en.wikipedia.org/wiki/white");
                 startActivity(intent);
             }
         });
+        black.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "Black is the lightest color and is achromatic (having no hue). It is the color of fresh snow.." );
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.black));
+                intent.putExtra(ColorDetails.urlBrowser, "http://en.wikipedia.org/wiki/black");
+                startActivity(intent);
+            }
+        });
+        yellow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "yellow is the brightest color and is achromatic (having no hue). It is the color of fresh snow.." );
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.yellow));
+                intent.putExtra(ColorDetails.urlBrowser, "http://en.wikipedia.org/wiki/yellow");
+                startActivity(intent);
+            }
+        });
+        brown.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "Brown is the dullestt color and is achromatic (having no hue). It is the color of fresh snow.." );
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.brown));
+                intent.putExtra(ColorDetails.urlBrowser, "http://en.wikipedia.org/wiki/brown");
+                startActivity(intent);
+            }
+        });
+        orange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "Orange is the fairestt color and is achromatic (having no hue). It is the color of fresh snow.." );
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.orange));
+                intent.putExtra(ColorDetails.urlBrowser, "http://en.wikipedia.org/wiki/orange");
+                startActivity(intent);
+            }
+        });
+        violet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "Violet is the lightest color and is achromatic (having no hue). It is the color of fresh snow.." );
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.violet));
+                intent.putExtra(ColorDetails.urlBrowser, "http://en.wikipedia.org/wiki/violet");
+                startActivity(intent);
+            }
+        });
+        royalBlue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "royalBlue is the combination lightest color and is achromatic (having no hue). It is the color of fresh snow.." );
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.royalBlue));
+                intent.putExtra(ColorDetails.urlBrowser, "http://en.wikipedia.org/wiki/royalblue");
+                startActivity(intent);
+            }
+        });
+        primaryColor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ColorListActivity.this, ColorDetails.class);
+                intent.putExtra(ColorDetails.colorDetails, "Royal blue is the combination of lightest color and is achromatic (having no hue). It is the color of fresh snow.." );
+                intent.putExtra(ColorDetails.myColor, getResources().getColor(R.color.colorPrimary));
+                intent.putExtra(ColorDetails.urlBrowser, "http://en.wikipedia.org/wiki/primarycolor");
+                startActivity(intent);
+            }
+        });
+
     }
 }
